@@ -73,7 +73,7 @@ public abstract class PDFOperations {
 		return images;
 	}
 
-	// Converts images into a document
+	// Converts images into a PDF document
 	public static PDDocument toDocument(List<BufferedImage> images) throws IOException {
 		PDDocument outputDocument = new PDDocument();
 		USED_DOCUMENTS.add(outputDocument);
