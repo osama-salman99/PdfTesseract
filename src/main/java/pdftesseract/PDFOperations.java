@@ -31,6 +31,7 @@ public abstract class PDFOperations {
 				.getLogger("org.apache.pdfbox").setLevel(java.util.logging.Level.SEVERE);
 	}
 
+	// Returns images contained in given directory
 	public static List<BufferedImage> getImages(File directory) {
 		if (directory.isDirectory()) {
 			return getImages(directory.listFiles());
@@ -39,6 +40,7 @@ public abstract class PDFOperations {
 		}
 	}
 
+	// Returns list of buffered images read from given files
 	public static List<BufferedImage> getImages(File[] files) {
 		List<BufferedImage> images = new ArrayList<>();
 		if (files == null) {
